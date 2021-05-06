@@ -1,0 +1,338 @@
+f {
+
+id = f
+fecha = 5/4/2021
+licencia = Licencia base: CC-BY-SA-4.0
+(https://creativecommons.org/licenses/by-sa/4.0/), licencia de las definiciones
+del bloque fundamental y la forma de espaciar entre cada sección: CC0
+(https://creativecommons.org/publicdomain/zero/1.0/).
+autor = Autor: Matías Bonino (o "El Investigador de las Ideas").
+
+Trabajo Práctico Final del Curso de Python Intermedio de Digicampus.
+
+Debe contener:
+
+Módulos.
+OOP. #
+Herencia, encapsulamiento y UML.
+Interfaces gráficas. #
+Bases de datos SQLite 3. #
+Archivos.
+Recursividad.
+
+Fecha de entrega: 18/4/2021.
+
+[
+
+Por cuestiones de comodidad y gusto se crea un nuevo renglón cada vez que se
+llegue a la columna 81. Esto se debe a que estoy usando el editor de texto Atom
+(https://atom.io/).
+
+]
+
+[
+
+Pueden llegar a actualizarse bloques si se cree necesario, en cuyo caso se
+actualizará la fecha del bloque.
+
+]
+
+[
+
+Para copypaste:
+
+Bloque unidefinidor vacío de 4 secciones.
+
+"
+
+{
+
+id =
+fecha = //
+
+
+
+[
+
+
+
+]
+
+
+
+}",
+
+Bloque vacío de 3 secciones.
+
+"
+
+{
+
+id =
+fecha = //
+
+
+
+
+
+}"
+
+Dejando espacio para los datos (que van cada uno en un renglón sin espacio entre
+ellos), el cuerpo del texto, y para los subbloques se dejan 3 renglones en vez
+de 1.
+
+]
+
+
+
+{
+
+id = 3
+fecha = 5/5/2021
+
+
+
+
+
+}
+
+{
+
+id = 2
+fecha = 5/5/2021
+
+Notas temporales que fui tomando en un archivo de texto.
+
+notas_temporales_TPF.txt {
+líneas importantes:
+
+
+
+problemas actuales:
+
+.
+.
+.
+
+roadmap:
+
+ |#---------|
+ -%
+ 0%
+ hacer : hs
+ : hs a : hs
+
+biblioteca 100% |##########|
+	libros 100% |##########|
+		alta 100%
+		mod 100%
+		baja 100%
+		consultar x título 100%
+		consultar todos 100%
+	préstamos 100% |##########|
+		registrar 100%
+		terminar 100%
+		reclamar 100%
+
+Reclamar: 
+Esta situación se plantea cuando el usuario controla 
+los préstamos vigentes y el programa detecta que hay préstamos que no se 
+devolvieron, inmediatamente el programa muestra los datos de la persona a la
+que se le prestó el libro para que el usuario pueda comunicarse con él/ella 
+y así poder acordar la devolución.
+
+-------------------------------------------------
+Modelo alternativo:
+
+
+
+Modelo actual:
+
+
+
+-------------------------------------------------
+
+Copypaste de ayuda para el código: {
+
+ --- FALTA TERMINAR --- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+}
+
+
+
+
+}
+
+
+
+}
+
+{
+
+id = 1
+fecha = 11/4/2021
+
+Primer modelo.
+
+Conjuntos de opciones a tener en cuenta: libros y préstamos.
+
+Empezar haciendo la clase 'Libro'.
+
+
+________________________________________________________________________________
+
+
+
+{
+
+id = 1.1
+fecha = 12/4/2021
+
+Aspecto visual del primer modelo.
+
+Ventanilla de presentación y créditos.
+Pestañas con botones: libros y préstamos.
+Ventana de error.
+
+________________________________________________________________________________
+
+
+
+}
+
+{
+
+id = 1.0
+fecha = 12/4/2021
+
+Pseudocódigo del primer modelo.
+
+[
+    Copypaste de instrucción-definición:
+"i [
+
+]
+"
+]
+
+{
+Biblioteca [
+
+class Libro
+    Título, autor, edición, lugar de impresión, editorial, si es una traducción, cantidad de páginas, condición.
+
+    Condición:
+    _ Préstamo en proceso: cuando el libro está en medio de un préstamo a alguno de los afiliados a la biblioteca.
+    _ Disponible: esta condición indica que el libro está disponible para ser prestado a algún afiliado.
+    _ Retraso: cuando un libro no ha sido devuelto una vez llegada la fecha de devolución.
+    _ En restauración: hay libros que, llegado cierto momento, pueden necesitar una restauración, durante las cuales no se puede prestar el libro.
+
+    Únicamente se puede prestar un libro en condición de disponible, toda otra condición debe hacer que el programa impida registrar el préstamo.
+
+class Préstamo
+    Nombre completo de la persona a la que se va a prestar, Teléfono, Mail, Fecha de inicio de préstamo, Fecha de devolución, Libro a prestar.
+
+Menú principal {
+
+Libros {
+
+Dar de alta un libro.
+Modificar los datos de un libro. Eso incluye la condición.
+Dar de baja un libro.
+Consultar un libro en particular por su nombre.
+Mostrar todos los libros cargados.
+}
+Préstamos {
+
+Registrar un préstamo.
+Dar por terminado un préstamo.
+Reclamar un préstamo: esta situación se plantea cuando el usuario controla 
+los préstamos vigentes y el programa detecta que hay préstamos que no se 
+devolvieron, inmediatamente el programa muestra los datos de la persona a la
+que se le prestó el libro para que el usuario pueda comunicarse con él/ella 
+y así poder acordar la devolución.
+}
+}
+]
+
+}
+
+
+
+}
+
+}
+
+{
+
+id = 0
+fecha = 11/4/2021
+
+Resumen.
+
+Defender el trabajo.
+Responder luego unas preguntas (examen teórico).
+Aprobado si 70 y 100% del examen.
+
+Caso de estudio: biblioteca.
+
+Libro: título, autor, edición, lugar de impresión, editorial, si es una 
+traducción, cantidad de páginas, condición.
+
+La condición de un libro es la situación actual en la que se encuentra, la cual 
+puede ser una de las siguientes:
+
+_ Préstamo en proceso: cuando el libro está en medio de un préstamo a alguno de 
+los afiliados a la biblioteca.
+_ Disponible: esta condición indica que el libro está disponible para ser 
+prestado a algún afiliado.
+_ Retraso: cuando un libro no ha sido devuelto una vez llegada la fecha de 
+devolución.
+_ En restauración: hay libros que, llegado cierto momento, pueden necesitar una 
+restauración, durante las cuales no se puede prestar el libro.
+
+Únicamente se puede prestar un libro en condición de disponible, toda otra 
+condición debe hacer que el programa impida registrar el préstamo.
+La condición de un libro debe poder ser cambiada por el usuario en cualquier 
+momento.
+
+Al momento de realizar un préstamo se debe registrar:
+
+_ Nombre completo de la persona a la que se va a prestar.
+_ Teléfono.
+_ Mail.
+_ Fecha de inicio de préstamo.
+_ Fecha de devolución.
+_ Libro a prestar.
+
+Funcionalidades que el programa debe proporcionar:
+
+_ Libros.
+    Dar de alta un libro.
+    Modificar los datos de un libro.
+    Dar de baja un libro.
+    Consultar un libro en particular por su nombre.
+    Mostrar todos los libros cargados.
+
+_ Préstamos.
+    Registrar un préstamo.
+    Dar por terminado un préstamo.
+    Reclamar un préstamo: esta situación se plantea cuando el usuario controla 
+    los préstamos vigentes y el programa detecta que hay préstamos que no se 
+    devolvieron, inmediatamente el programa muestra los datos de la persona a la
+    que se le prestó el libro para que el usuario pueda comunicarse con él/ella 
+    y así poder acordar la devolución.
+
+Requisitos mínimos:
+
+_ OOP.
+_ Tkinter.
+_ Perduración de datos: los datos cargados de los usuarios deben permanecer 
+después de terminada la ejecucuión del programa. El cómo hacerlo es de libre 
+decisión del programador.
+
+
+
+}
+
+}
