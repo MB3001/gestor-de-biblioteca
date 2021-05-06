@@ -940,7 +940,7 @@ class VentanaRecl:
     def __init__(self, pres):
         ventana = tk.Tk()
         ventana.title('Advertencia de retraso en la devolución de libro')
-        ventana.geometry('300x180')
+        ventana.geometry('400x180')
 
          # Advertencia de retraso en la devolución de libro.
         label = tk.Label(ventana, text = f"Retraso en la devolución de libro:\n\n{pres.persona.nombre} no ha devuelto el libro '{pres.libro.título}' a tiempo.\n\n\
